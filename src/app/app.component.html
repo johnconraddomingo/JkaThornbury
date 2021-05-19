@@ -1,17 +1,8 @@
  
-<img src="assets/images/jka-header.png" class="header-image center img-fluid" >
- 
+ <div class="m-2"> 
+<img src="assets/images/jka-header.png" class="header-image center  img-fluid " >
+ </div>
 
- 
-<!-- 
-  <a class="nav-link" routerLink='/home' routerLinkActive='active'>Home</a>
-  <a class="nav-link" routerLink='about-jka' routerLinkActive='active'>About JKA</a>
-  <a class="nav-link" routerLink='instructor' routerLinkActive='active'>Instructor</a>
-  <a class="nav-link" routerLink='dojo-kun' routerLinkActive='active'>Dojo Kun</a>
-  <a class="nav-link" routerLink='syllabus' routerLinkActive='active'>Syllabus</a>
-  <a class="nav-link" routerLink='kata' routerLinkActive='active'>Kata</a>
-  <a class="nav-link" routerLink='contact-us' routerLinkActive='active'>Contact Us</a>
-  -->
  
 
   <nav class="navbar navbar-expand-lg navbar-light  mb-3 justify-content-center" >
@@ -22,8 +13,8 @@
     </button>
     
     <div [ngbCollapse]="isMenuCollapsed" class="collapse navbar-collapse justify-content-center">
-      <ul class="navbar-nav justify-content-center">
-        <li class="nav-item active"> 
+      <ul class="navbar-nav justify-content-center text-center">
+        <li class="nav-item"> 
           <a class="nav-link" [routerLink]="'/home'" routerLinkActive="active" (click)="isMenuCollapsed = true">Home</a>
         </li>
         <li class="nav-item">
@@ -33,7 +24,7 @@
           <a class="nav-link" [routerLink]="'/instructor'" routerLinkActive="active" (click)="isMenuCollapsed = true">Instructor</a>
         </li> 
         <li class="nav-item">
-          <a class="nav-link" [routerLink]="'/dojo-kun'" routerLinkActive="active" (click)="isMenuCollapsed = true">Dojo Kun</a>
+          <a class="nav-link" [routerLink]="'/beginners'" routerLinkActive="active" (click)="isMenuCollapsed = true">Beginners</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" [routerLink]="'/syllabus'" routerLinkActive="active" (click)="isMenuCollapsed = true">Syllabus</a>
@@ -51,4 +42,4 @@
 
  
 
-<router-outlet></router-outlet>
+<router-outlet></router-outlet>  

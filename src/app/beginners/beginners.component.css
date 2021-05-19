@@ -1,0 +1,6 @@
+
+iframe {
+    border: none;
+}
+
+.videos .card {display:inline-block; margin: 0.5rem;  }

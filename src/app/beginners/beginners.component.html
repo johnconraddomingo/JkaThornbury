@@ -1,0 +1,34 @@
+
+<div class="p-5">
+<h2>For Beginners</h2>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas auctor venenatis mattis. Morbi molestie elit nec est pellentesque, vitae sagittis neque congue. Nunc tempus odio dapibus, congue orci sed, varius felis. Pellentesque non turpis sit amet sem condimentum consequat vel in magna. Sed ut urna non ante rutrum cursus non at felis. Integer facilisis accumsan nulla vitae aliquet. Etiam mattis ullamcorper lacinia. Etiam consectetur aliquet sodales. Cras eget molestie sapien.</p>
+ 
+<div class="videos" > 
+
+    <div class="card" *ngFor="let video of videos">        
+       <iframe class="embed-responsive-item" [src]="video.link | safe" allowfullscreen></iframe>         
+ 
+        <div class="card-body">
+            <p class="card-text">{{video.title}}</p> 
+        </div>
+    </div> 
+
+</div>
+
+
+<h2>Frequently Asked Questions</h2>
+<!-- TODO: Move datasource to the component -->
+
+<ngb-accordion #acc="ngbAccordion" *ngFor="let faq of faqs">
+    
+    <ngb-panel id="toggle-{{faq.id}}" title="{{faq.question}}">
+      <ng-template ngbPanelContent>
+       {{faq.answer}}
+      </ng-template>
+    </ngb-panel>
+    
+   
+
+  </ngb-accordion>
+
+</div>

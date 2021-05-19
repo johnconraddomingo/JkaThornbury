@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class InstructorComponent implements OnInit {
 
+  images = [944, 1011, 984].map((n) => `https://picsum.photos/id/${n}/2000/300`);
   constructor() { }
 
   ngOnInit(): void {

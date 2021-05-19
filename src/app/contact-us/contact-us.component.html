@@ -1,1 +1,15 @@
-<p>contact-us works!</p>
+ 
+
+<!-- Default form contact -->
+<form [formGroup]="formdata" class="form-group text-center border border-light p-5" (ngSubmit)="onSubmit(formdata.value)">
+
+    <p class="h4 mb-4">Contact us</p>
+  
+    <input type="text"  id="defaultContactFormName" class="form-control mb-4 " name="name" formControlName="name" placeholder="Name">
+    <input type="email"   id="defaultContactFormEmail" class="form-control mb-4" name="email" formControlName="email" placeholder="E-mail">
+    <div class="form-group">
+      <textarea  class="form-control mb-4" id="exampleFormControlTextarea2" rows="3" name="message" formControlName="message" placeholder="Message"></textarea>
+    </div>    
+    <button class="btn btn-primary" type="submit">Send</button>
+  
+</form> 

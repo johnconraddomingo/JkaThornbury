@@ -1,1 +1,51 @@
-<p>instructor works!</p>
+<!-- <img src="https://picsum.photos/2000/300" class="img-fluid"/> -->
+<ngb-carousel *ngIf="images">
+  <ng-template ngbSlide>
+    <div class="picsum-img-wrapper">
+      <img [src]="images[0]" alt="Random first slide">
+    </div>
+    <div class="carousel-caption">
+      <h3>First slide label</h3>
+      <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+    </div>
+  </ng-template>
+  <ng-template ngbSlide>
+    <div class="picsum-img-wrapper">
+      <img [src]="images[1]" alt="Random second slide">
+    </div>
+    <div class="carousel-caption">
+      <h3>Second slide label</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    </div>
+  </ng-template>
+  <ng-template ngbSlide>
+    <div class="picsum-img-wrapper">
+      <img [src]="images[2]" alt="Random third slide">
+    </div>
+    <div class="carousel-caption">
+      <h3>Third slide label</h3>
+      <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+    </div>
+  </ng-template>
+</ngb-carousel>
+
+<div class="p-5" >
+
+    <h1>Ciaran Horgan Sensei</h1>
+    <div>
+        <div>4th Dan</div>
+        <div>Instructor B</div>
+        <div>Examiner D</div>
+        <div>Judge C</div>
+
+        <div class="py-5">
+            <h2>JKA Instructor Qualification</h2>
+
+            <p>At JKA headquarters, all our instructors are specially trained and licensed to teach. Each of them must train extensively and complete the JKA’s unique specialist instructor training program before receiving certification to fulfil the various functions they are responsible for within the JKA.</p>
+            <p>The JKA offers three basic kinds of qualifications: authorized Instructor qualifications (for teaching karate); authorized Judge qualifications (for judging and refereeing at tournaments); and authorized Examiner qualifications (for testing and evaluating Dan, instructors and other types of qualification). Typically, it is only those who are already qualified instructors who are eligible for the other two types.</p>
+            <p>For each type of official qualification, there are four classes: D through A. Each subsequent class authorizes the instructor to carry out an increasingly broad spectrum of activities appropriate to the individual’s experience—with Instructors and Judges outside Japan also carrying out their activities according to the rules for their country. Class A is the highest rank offered in the JKA.</p>
+            <p>To advance from one class to the next, the instructor must fulfil the certification requirements and successfully complete the formal testing procedure. Testing cannot take place until a minimum of three months after the candidate has attained the Dan and completed the other qualifications required for that class.</p>
+            <p>Testing for these various classes of qualification are carried out by authorized and certified Examiners specified by the Chief Instructor or by the Technical Committee. Overseas Examiners who have been given special Examiner’s authorization by JKA headquarters carry out their duties in their country based upon the authority given to them.</p>
+            <p>Generally, qualifications are renewed every three years, and require a training session before the renewal can be validated.</p>
+        </div>
+</div>

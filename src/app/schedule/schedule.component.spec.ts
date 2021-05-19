@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { DojoKunComponent } from './dojo-kun.component';
+import { ScheduleComponent } from './schedule.component';
 
-describe('DojoKunComponent', () => {
-  let component: DojoKunComponent;
-  let fixture: ComponentFixture<DojoKunComponent>;
+describe('ScheduleComponent', () => {
+  let component: ScheduleComponent;
+  let fixture: ComponentFixture<ScheduleComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ DojoKunComponent ]
+      declarations: [ ScheduleComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(DojoKunComponent);
+    fixture = TestBed.createComponent(ScheduleComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

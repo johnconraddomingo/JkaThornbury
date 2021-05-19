@@ -1,0 +1,8 @@
+  /* Headers */
+  .header-image {
+    width: 200px;
+}
+
+.navbar-light .navbar-toggler {
+  border: none !important;
+}
