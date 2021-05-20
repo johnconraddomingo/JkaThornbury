@@ -1,0 +1,9 @@
+.benefits .card {
+    width: 18rem;
+    display: inline-block;
+    margin: 0.5rem;
+}
+
+.benefits .card .card-body .card-title i {
+    font-size: 3rem;
+}

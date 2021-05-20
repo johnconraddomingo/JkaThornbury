@@ -6,16 +6,16 @@ import { AboutJkaComponent } from './about-jka/about-jka.component';
 import { InstructorComponent } from './instructor/instructor.component';
 import { BeginnersComponent } from './beginners/beginners.component';
 import { SyllabusComponent } from './syllabus/syllabus.component';
-import { KataComponent } from './kata/kata.component';
+import { ScheduleComponent } from './schedule/schedule.component';
 import { ContactUsComponent } from './contact-us/contact-us.component';
 
 const routes: Routes = [
+  {path: '', component : HomeComponent },
   {path: 'home', component : HomeComponent },
   {path: 'about-jka', component: AboutJkaComponent }, 
   {path: 'instructor', component: InstructorComponent }, 
   {path: 'beginners', component: BeginnersComponent }, 
-  {path: 'syllabus', component: SyllabusComponent }, 
-  {path: 'kata', component: KataComponent }, 
+  {path: 'schedule', component: ScheduleComponent }, 
   {path: 'contact-us', component: ContactUsComponent } 
 ];
 
@@ -24,4 +24,4 @@ const routes: Routes = [
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
-export const routingComponents = [HomeComponent, AboutJkaComponent, InstructorComponent, BeginnersComponent, SyllabusComponent, KataComponent, ContactUsComponent]
+export const routingComponents = [HomeComponent, AboutJkaComponent, InstructorComponent, BeginnersComponent, SyllabusComponent, ScheduleComponent, ContactUsComponent]

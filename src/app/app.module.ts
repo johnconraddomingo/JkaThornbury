@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-
+import { NgxBootstrapIconsModule, allIcons } from 'ngx-bootstrap-icons';
 import { AppRoutingModule, routingComponents } from './app-routing.module';
 import { AppComponent } from './app.component'; 
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap'; 
@@ -21,12 +21,14 @@ import { SafePipe } from './services/pipes';
     SafePipe,
     routingComponents 
   ],
+  
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
     ReactiveFormsModule,
-    NgbModule 
+    NgbModule,  
+    NgxBootstrapIconsModule.pick(allIcons)
   ],
   providers: [],
   bootstrap: [AppComponent]
