@@ -11,7 +11,7 @@ on:
 
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: windows-latest
 
     steps:
     - uses: actions/checkout@v2
@@ -34,7 +34,7 @@ jobs:
         path: .
 
   deploy:
-    runs-on: ubuntu-latest
+    runs-on: windows-latest
     needs: build
     environment:
       name: 'production'
@@ -52,5 +52,5 @@ jobs:
       with:
         app-name: 'jkamelbourne'
         slot-name: 'production'
-        publish-profile: ${{ secrets.AzureAppService_PublishProfile_e74e88e5d97a4a649745528baefd4813 }}
+        publish-profile: ${{ secrets.AzureAppService_PublishProfile_2a3d23f827874f97843226298df04dac }}
         package: .
