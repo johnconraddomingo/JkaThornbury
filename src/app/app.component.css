@@ -6,3 +6,19 @@
 .navbar-light .navbar-toggler {
   border: none !important;
 }
+
+footer {
+  background-color: black;
+  
+  border-top: red;
+  border-top-width: 2px;
+  border-top-style: solid;
+
+  color: white;
+ 
+}
+
+footer a {
+  text-decoration: none;
+  color: #FFFFFF;
+}
